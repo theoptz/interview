@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+// Follow link to see details
+// https://leetcode.com/problems/generate-parentheses/
+
 func generateParenthesis(n int) []string {
 	if n == 0 {
 		return []string{}
