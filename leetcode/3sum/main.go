@@ -5,6 +5,9 @@ import (
 	"sort"
 )
 
+// Follow link to see details
+// https://leetcode.com/problems/3sum/
+
 func threeSum(nums []int) [][]int {
 	var res = make([][]int, 0)
 
