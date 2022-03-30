@@ -19,7 +19,7 @@ type LRU struct {
 	list     *list.List
 	capacity int
 
-	mu *sync.Mutex
+	mu sync.Mutex
 }
 
 func NewLRU(capacity int) *LRU {
@@ -31,7 +31,7 @@ func NewLRU(capacity int) *LRU {
 		cache:    make(map[string]*list.Element),
 		list:     list.New(),
 		capacity: capacity,
-		mu:       &sync.Mutex{},
+		mu:       sync.Mutex{},
 	}
 }
 
